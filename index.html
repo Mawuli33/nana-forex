@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Join Nana Forex Cartel — Learn forex trading for free. Join our Telegram group and start your trading journey today." />
+  <title>Nana Forex Cartel — Learn Forex For Free</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600&family=Inter:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVBAR
+  ════════════════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <img src="images/logo.jpg" class="logo-icon">
+      
+      </div>
+      <ul class="nav-links">
+        <li><a href="#what-you-learn">What You Learn</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#testimonials">Results</a></li>
+        <li><a href="#join">Join Free</a></li>
+      </ul>
+      <a href="https://t.me/learnforexforfreegh" target="_blank" class="nav-cta">
+        Join Telegram →
+      </a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ════════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <!-- Animated background elements -->
+    <div class="hero-bg">
+      <div class="bg-grid"></div>
+      <div class="bg-glow bg-glow-1"></div>
+      <div class="bg-glow bg-glow-2"></div>
+      <div class="ticker-tape" id="tickerTape"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Free Forex Education · Ghana
+      </div>
+
+      <h1 class="hero-title">
+        Learn Forex Trading<br />
+        <em>For Free.</em><br />
+        <span>Start Making Money.</span>
+      </h1>
+
+      <p class="hero-desc">
+        Join <strong>Nana Forex Cartel</strong> — Ghana's fastest growing forex
+        community. Get daily signals, live analysis, mentorship and full trading
+        education completely free on Telegram.
+      </p>
+
+      <div class="hero-actions">
+        <a href="https://t.me/learnforexforfreegh" target="_blank" class="btn-primary">
+          <span class="btn-icon">✈</span>
+          <span>Join Free on Telegram</span>
+        </a>
+        <a href="#what-you-learn" class="btn-ghost">See What You'll Learn ↓</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-num" id="counterMembers">0</div>
+          <div class="stat-label">Active Members</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-num">100%</div>
+          <div class="stat-label">Free to Join</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-num">Daily</div>
+          <div class="stat-label">Signals & Analysis</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-num">🇬🇭</div>
+          <div class="stat-label">Ghana Based</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Live chart mockup -->
+    <div class="hero-visual">
+      <div class="chart-card">
+        <div class="chart-header">
+          <div class="chart-pair">EUR/USD</div>
+          <div class="chart-price green">1.08542 <span>▲ +0.0024</span></div>
+        </div>
+        <canvas id="heroChart" width="380" height="180"></canvas>
+        <div class="chart-footer">
+          <div class="chart-signal">
+            <span class="signal-dot green"></span>
+            Signal: <strong>BUY</strong>
+          </div>
+          <div class="chart-time">Live Analysis</div>
+        </div>
+      </div>
+
+      <div class="floating-card card-1">
+        <div class="fc-icon">💰</div>
+        <div>
+          <div class="fc-title">Today's Signal</div>
+          <div class="fc-val green">GBP/JPY — BUY ▲</div>
+        </div>
+      </div>
+
+      <div class="floating-card card-2">
+        <div class="fc-icon">📈</div>
+        <div>
+          <div class="fc-title">Win Rate</div>
+          <div class="fc-val">87% This Month</div>
+        </div>
+      </div>
+
+      <div class="floating-card card-3">
+        <div class="fc-icon">✅</div>
+        <div>
+          <div class="fc-title">Last Trade</div>
+          <div class="fc-val green">+320 Pips</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       MARQUEE
+  ════════════════════════════════════════════ -->
+  <div class="marquee-bar">
+    <div class="marquee-track">
+      <span class="mq-item"><span class="mq-up">▲</span> EUR/USD +0.0024</span>
+      <span class="mq-item"><span class="mq-down">▼</span> GBP/USD -0.0018</span>
+      <span class="mq-item"><span class="mq-up">▲</span> XAU/USD +12.40</span>
+      <span class="mq-item"><span class="mq-up">▲</span> GBP/JPY +0.342</span>
+      <span class="mq-item"><span class="mq-down">▼</span> AUD/USD -0.0012</span>
+      <span class="mq-item"><span class="mq-up">▲</span> USD/CHF +0.0009</span>
+      <span class="mq-item"><span class="mq-up">▲</span> NZD/USD +0.0031</span>
+      <span class="mq-item"><span class="mq-down">▼</span> USD/CAD -0.0022</span>
+      <span class="mq-item"><span class="mq-up">▲</span> EUR/GBP +0.0015</span>
+      <span class="mq-item"><span class="mq-up">▲</span> EUR/USD +0.0024</span>
+      <span class="mq-item"><span class="mq-down">▼</span> GBP/USD -0.0018</span>
+      <span class="mq-item"><span class="mq-up">▲</span> XAU/USD +12.40</span>
+      <span class="mq-item"><span class="mq-up">▲</span> GBP/JPY +0.342</span>
+      <span class="mq-item"><span class="mq-down">▼</span> AUD/USD -0.0012</span>
+      <span class="mq-item"><span class="mq-up">▲</span> USD/CHF +0.0009</span>
+      <span class="mq-item"><span class="mq-up">▲</span> NZD/USD +0.0031</span>
+      <span class="mq-item"><span class="mq-down">▼</span> USD/CAD -0.0022</span>
+      <span class="mq-item"><span class="mq-up">▲</span> EUR/GBP +0.0015</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       WHAT YOU LEARN
+  ════════════════════════════════════════════ -->
+  <section id="what-you-learn" class="learn-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">The Curriculum</div>
+        <h2 class="section-title">Everything you'll learn<br /><em>inside the group</em></h2>
+        <p class="section-sub">From complete beginner to confident trader. Step by step, in plain language, completely free.</p>
+      </div>
+
+      <div class="learn-grid reveal">
+        <div class="learn-card">
+          <div class="learn-num">01</div>
+          <div class="learn-icon">📊</div>
+          <div class="learn-title">Forex Basics</div>
+          <div class="learn-desc">What forex is, how the market works, currency pairs, pips, lots and everything a beginner needs to start. No prior knowledge needed.</div>
+        </div>
+        <div class="learn-card">
+          <div class="learn-num">02</div>
+          <div class="learn-icon">📉</div>
+          <div class="learn-title">Technical Analysis</div>
+          <div class="learn-desc">How to read charts, identify trends, use support and resistance levels, and understand candlestick patterns like a professional trader.</div>
+        </div>
+        <div class="learn-card">
+          <div class="learn-num">03</div>
+          <div class="learn-icon">🧠</div>
+          <div class="learn-title">Trading Psychology</div>
+          <div class="learn-desc">How to control emotions, manage fear and greed, stay disciplined and think like a professional trader even when markets move against you.</div>
+        </div>
+        <div class="learn-card">
+          <div class="learn-num">04</div>
+          <div class="learn-icon">🛡️</div>
+          <div class="learn-title">Risk Management</div>
+          <div class="learn-desc">How to protect your capital, set stop losses, calculate lot sizes and never blow your account — the most important skill in trading.</div>
+        </div>
+        <div class="learn-card">
+          <div class="learn-num">05</div>
+          <div class="learn-icon">⚡</div>
+          <div class="learn-title">Daily Trading Signals</div>
+          <div class="learn-desc">Get real trade setups sent daily — entry price, stop loss and take profit clearly marked. Learn by watching real trades happen live.</div>
+        </div>
+        <div class="learn-card">
+          <div class="learn-num">06</div>
+          <div class="learn-icon">🎯</div>
+          <div class="learn-title">Live Market Analysis</div>
+          <div class="learn-desc">Watch Nana break down live market conditions every week. Understand exactly why trades are taken and what the charts are saying.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       ABOUT
+  ════════════════════════════════════════════ -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="about-grid reveal">
+        <div class="about-visual">
+          <div class="about-card">
+            <div class="about-initial">
+              <img src="images/profile.jpeg">
+            </div>
+            <div class="about-name">Nana</div>
+            <div class="about-title">Forex Cartel</div>
+            <div class="about-quote">
+              "I started with nothing and learned forex the hard way. Now I teach everything I know — for free — so others don't have to make the same mistakes I did."
+            </div>
+            <div class="about-tags">
+              <span class="tag">Technical Analysis</span>
+              <span class="tag">Price Action</span>
+              <span class="tag">Risk Management</span>
+              <span class="tag">Mentorship</span>
+            </div>
+          </div>
+          <div class="about-glow"></div>
+        </div>
+
+        <div class="about-text">
+          <div class="section-tag">About Nana</div>
+          <h2 class="section-title">Why learn from<br /><em>Nana Forex Cartel?</em></h2>
+          <p>Nana is a professional forex trader based in Ghana who has been trading the financial markets for years. He started this community with one simple goal — to make quality forex education accessible to every Ghanaian who wants to build a better financial future.</p>
+          <p>Unlike many so-called gurus who charge thousands of cedis for courses, Nana shares everything — his strategy, his analysis, his signals — completely free inside the Telegram group.</p>
+
+          <div class="about-points">
+            <div class="about-point">
+              <div class="point-check">✓</div>
+              <div>Teaches in plain, simple language — no confusing jargon</div>
+            </div>
+            <div class="about-point">
+              <div class="point-check">✓</div>
+              <div>Shares real trades — not just theory</div>
+            </div>
+            <div class="about-point">
+              <div class="point-check">✓</div>
+              <div>Available to answer questions personally</div>
+            </div>
+            <div class="about-point">
+              <div class="point-check">✓</div>
+              <div>100% free — no hidden charges, no paid upgrades</div>
+            </div>
+            <div class="about-point">
+              <div class="point-check">✓</div>
+              <div>Built for Ghanaians who want real financial freedom</div>
+            </div>
+          </div>
+
+          <a href="https://t.me/learnforexforfreegh" target="_blank" class="btn-primary" style="margin-top: 36px; display: inline-flex;">
+            <span class="btn-icon">✈</span>
+            <span>Join the Community Free</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       HOW IT WORKS
+  ════════════════════════════════════════════ -->
+  <section class="steps-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">How It Works</div>
+        <h2 class="section-title">Start your trading journey<br /><em>in 3 simple steps</em></h2>
+      </div>
+      <div class="steps-grid reveal">
+        <div class="step-card">
+          <div class="step-num">01</div>
+          <div class="step-icon">✈</div>
+          <div class="step-title">Join the Telegram Group</div>
+          <div class="step-desc">Click the button and join our free Telegram group in seconds. No payment, no form, no waiting. Just click and you're in.</div>
+        </div>
+        <div class="step-card">
+          <div class="step-num">02</div>
+          <div class="step-icon">📚</div>
+          <div class="step-title">Access All the Education</div>
+          <div class="step-desc">Browse through all the free lessons, analysis posts and signals. Start from the basics or jump straight into daily signals.</div>
+        </div>
+        <div class="step-card">
+          <div class="step-num">03</div>
+          <div class="step-icon">💰</div>
+          <div class="step-title">Learn and Start Trading</div>
+          <div class="step-desc">Follow the signals, study the analysis, ask questions and begin your journey toward consistent profitability in the forex market.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       TESTIMONIALS
+  ════════════════════════════════════════════ -->
+  <section id="testimonials" class="testi-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Community Results</div>
+        <h2 class="section-title">What members are<br /><em>saying about us</em></h2>
+        <p class="section-sub">Real people. Real results. Inside the Nana Forex Cartel community.</p>
+      </div>
+
+      <div class="testi-grid reveal">
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <div class="testi-quote">I joined this group with zero knowledge about forex. After just 3 weeks of following Nana's lessons and signals I made my first profitable trade. I can't believe this is all free.</div>
+          <div class="testi-author">
+            <div class="testi-avatar">K</div>
+            <div>
+              <div class="testi-name">Kwame A.</div>
+              <div class="testi-loc">Accra, Ghana</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card featured">
+          <div class="testi-stars">★★★★★</div>
+          <div class="testi-quote">I paid GHS 2,000 for a forex course elsewhere and learned less than what Nana shares for free in this group every week. The signals are accurate and the teaching is clear. Best decision I made.</div>
+          <div class="testi-author">
+            <div class="testi-avatar">A</div>
+            <div>
+              <div class="testi-name">Ama S.</div>
+              <div class="testi-loc">Kumasi, Ghana</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <div class="testi-quote">The risk management lessons alone changed how I trade completely. I used to blow accounts every month. Now I'm consistent and my account has been growing for 2 months straight. Thank you Nana.</div>
+          <div class="testi-author">
+            <div class="testi-avatar">E</div>
+            <div>
+              <div class="testi-name">Efo K.</div>
+              <div class="testi-loc">Tema, Ghana</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       JOIN CTA
+  ════════════════════════════════════════════ -->
+  <section id="join" class="cta-section">
+    <div class="cta-bg-glow"></div>
+    <div class="container">
+      <div class="cta-inner reveal">
+        <div class="cta-badge">🔥 Limited Spots — Join Now</div>
+        <h2 class="cta-title">
+          Stop watching others make money<br />
+          <em>while you wait.</em>
+        </h2>
+        <p class="cta-desc">
+          Join thousands of Ghanaians already learning forex for free inside
+          the Nana Forex Cartel Telegram group. Daily signals, live analysis,
+          full mentorship — completely free. Forever.
+        </p>
+        <a href="https://t.me/learnforexforfreegh" target="_blank" class="btn-cta-large">
+          <span class="btn-icon">✈</span>
+          <span>Join Free on Telegram Now</span>
+        </a>
+        <div class="cta-reassure">
+          ✓ 100% Free &nbsp;&nbsp; ✓ No Credit Card &nbsp;&nbsp; ✓ Join in Seconds &nbsp;&nbsp; ✓ Ghana Community
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════ -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="footer-logo">
+           <img src="images/logo.jpg" class="logo-icon">
+            <span>Nana <span>Forex Cartel</span></span>
+          </div>
+          <p class="footer-desc">Ghana's free forex education community. Learn to trade, grow your account and achieve financial freedom.</p>
+          <a href="https://t.me/learnforexforfreegh" target="_blank" class="footer-tg">
+            ✈ t.me/learnforexforfreegh
+          </a>
+        </div>
+        <div class="footer-links-col">
+          <div class="footer-col-title">Quick Links</div>
+          <ul class="footer-links">
+            <li><a href="#what-you-learn">What You Learn</a></li>
+            <li><a href="#about">About Nana</a></li>
+            <li><a href="#testimonials">Results</a></li>
+            <li><a href="#join">Join Free</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <div class="footer-col-title">What You Get</div>
+          <ul class="footer-links">
+            <li><a href="#">Daily Signals</a></li>
+            <li><a href="#">Live Analysis</a></li>
+            <li><a href="#">Full Education</a></li>
+            <li><a href="#">Mentorship</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">© 2026 Nana Forex Cartel · All Rights Reserved · Ghana 🇬🇭</div>
+        <div class="footer-disclaimer">Trading forex involves risk. Past performance is not indicative of future results. Trade responsibly.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="main.js"></script>
+
+</body>
+</html>
